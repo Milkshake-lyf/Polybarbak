@@ -225,7 +225,7 @@ format = <label><ramp-load>
 ;   %percentage-sum% - Cumulative load on all cores
 ;   %percentage-cores% - load percentage for each core
 ;   %percentage-core[1-9]% - load percentage for specific core
-label = CPU %percentage%%
+label = CPU%percentage%%
 ;label-font = 3
 
 ; Spacing between individual per-core ramps
@@ -303,7 +303,7 @@ format = <label><ramp-used>
 ;   %gb_swap_free%
 ;   %gb_swap_used%
 
-label = RAM %percentage_used%%
+label = RAM%percentage_used%%
 ;label-font = 3
 
 ; Only applies if <bar-used> is used
@@ -349,7 +349,7 @@ ramp-free-7 = █
 
 [module/network]
 type = internal/network
-interface = wlp0s20f3
+interface = enp0s29f7u7
 interval = 3.0
 
 label = %essid%
@@ -388,18 +388,18 @@ format-disconnected =
 
 [module/date]
 type = internal/date
-interval = 5
+interval = 5 
 
 date = " %Y-%m-%d "
 
-time = %H:%M
+time = %H:%M:%S
 time-alt = %H:%M:%S
 
-format-prefix = 
+format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #0a6cf5
 
-label = %date% | %time%
+label =  %date%| %time%
 
 [module/pulseaudio]
 type = internal/pulseaudio
@@ -409,7 +409,7 @@ label-volume = VOL %percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted = 🔇 muted
-label-muted-foreground = #666
+label-muted-foreground = #665
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55
